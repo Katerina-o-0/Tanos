@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container_gradient">
+        <header class="header">
+          <div class="container">
+            <div class="header__inner">
+              <a href="#" class="logo">
+                <img src="images/logo.svg" alt="" class="logo__img" />
+              </a>
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__list-item hidden-list">
+                    <a href="#" class="menu__list-link">МЕНЮ</a>
+                    <ul class="menu__list-hidden">
+                      <li>
+                        <a href="#" class="menu__list-hidden-item">УСЛУГИ</a>
+                      </li>
+                      <li>
+                        <a href="#" class="menu__list-hidden-item">СТАТЬИ</a>
+                      </li>
+                      <li>
+                        <a href="#" class="menu__list-hidden-item">ВАКАНСИИ</a>
+                      </li>
+                      <li>
+                        <a href="#" class="menu__list-hidden-item">ФРАНШИЗА</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="#" class="menu__list-link">ПОРТФОЛИО</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="#" class="menu__list-link">ЦЕНЫ</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="#" class="menu__list-link">СХЕМА РАБОТЫ</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="#" class="menu__list-link">ОТЗЫВЫ</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="#" class="menu__list-link">КОНТАКТЫ</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="#" class="menu__list-link">ГАРАНТИЯ</a>
+                  </li>
+                </ul>
+              </nav>
+              <a href="#callback"
+                ><button class="menu__button-callback">
+                  ОБРАТНЫЙ ЗВОНОК
+                </button></a
+              >
+            </div>
+          </div>
+        </header>
+        <main class="main">
+          <section class="top">
+            <div class="container_repairinfo">
+              <h1 class="title">Ремонт под ключ от 2900 руб/м<sup>2</sup>.</h1>
+              <p class="repairinfo">
+                При заказе ремонта делаем<br />
+                дизайн-проект в подарок
+              </p>
+              <ul class="important__list">
+                <li class="important__item">
+                  <img
+                    class="important__item-img"
+                    src="images/imp-1.svg"
+                    alt=""
+                  />
+                  <p class="important__item-text">
+                    Бесплатный выезд в день обращения
+                  </p>
+                </li>
+                <li class="important__item">
+                  <img
+                    class="important__item-img"
+                    src="images/imp-3.svg"
+                    alt=""
+                  />
+                  <p class="important__item-text">
+                    Гарантия на работу до 5 лет
+                  </p>
+                </li>
+                <li class="important__item">
+                  <img
+                    class="important__item-img"
+                    div
+                    src="images/imp-2.svg"
+                    alt=""
+                  />
+                  <p class="important__item-text">Жесткое соблюдение сроков</p>
+                </li>
+              </ul>
+            </div>
+            <div class="container_form">
+              <form id="repair_form">
+                <h2 class="form_info">
+                  Рассчитайте<br />
+                  стоимость ремонта
+                </h2>
+                <div class="range_square">
+                  <label id="range_square-label" for="square"
+                    >ПЛОЩАДЬ КВАРТИРЫ:</label
+                  >
+                  <span>68м<sup>2</sup></span>
+                  <input
+                    class="square_range-inp"
+                    type="range"
+                    name="square"
+                    min="0"
+                    max="136"
+                    step="1"
+                  />
+                </div>
+                <div class="type_housing">
+                  <label id="type_housing-label" for="housing"
+                    >ТИТ ЖИЛЬЯ:</label
+                  >
+                  <label class="label_radio">
+                    <input
+                      name="housing"
+                      value="secondary-housing"
+                      type="radio"
+                      class="input-radio"
+                      checked
+                    />Вторичное жильё</label
+                  >
+                  <label class="label_radio">
+                    <input
+                      name="housing"
+                      value="new-building"
+                      type="radio"
+                      class="input-radio"
+                    />Новостройка</label
+                  >
+                  <label class="label_radio">
+                    <input
+                      name="housing"
+                      value="office"
+                      type="radio"
+                      class="input-radio"
+                    />Офис</label
+                  >
+                </div>
+                <div class="number_rooms">
+                  <label id="number_rooms-label" for="rooms"
+                    >КОЛ-ВО КОМНАТ:</label
+                  >
+                  <label class="label_radio">
+                    <input
+                      name="rooms"
+                      value="one"
+                      type="radio"
+                      class="input-radio"
+                      checked
+                    />1</label
+                  >
+                  <label class="label_radio">
+                    <input
+                      name="rooms"
+                      value="two"
+                      type="radio"
+                      class="input-radio"
+                    />2</label
+                  >
+                  <label class="label_radio">
+                    <input
+                      name="rooms"
+                      value="morethree"
+                      type="radio"
+                      class="input-radio"
+                    />3+</label
+                  >
+                  <label class="label_radio">
+                    <input
+                      name="rooms"
+                      value="studio"
+                      type="radio"
+                      class="input-radio"
+                    />Студия</label
+                  >
+                </div>
+                <div class="container_button_form">
+                  <button
+                    class="button_form"
+                    type="submit"
+                    formmethod="get"
+                    formaction="index.html"
+                  >
+                    Отправить
+                  </button>
+                </div>
+              </form>
+              <img src="images/side_image.jpg" alt="" class="repair_img" />
+            </div>
+          </section>
+        </main>
+      </div>
+      <footer class="footer">
+        <ul class="footer_task">
+          <li>
+            <a href="task2and5.html" class="footer_task">Задание 5 и 4</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
